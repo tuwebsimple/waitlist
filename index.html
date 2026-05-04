@@ -233,6 +233,8 @@
 
   /* Nav menu wrapper — transparent on desktop, fullscreen on mobile */
   .nav-menu{ display:contents }
+  /* Title is only used as a heading inside the mobile fullscreen menu */
+  .nav-menu-title{ display:none }
 
   .nav-links{
     display:flex; gap:40px;
@@ -1064,6 +1066,7 @@
       -webkit-overflow-scrolling:touch;
     }
     .nav-menu-title{
+      display:block;
       font-family:var(--serif);
       font-style:italic;
       font-weight:400;
